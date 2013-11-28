@@ -1,0 +1,121 @@
+/* ==================================================
+   RESET
+================================================== */
+*, *:after, *:before {
+margin: 0;
+padding: 0;
+border: 0;
+border: none;
+vertical-align: baseline;
+font: 14px 'Open Sans', Arial, sans-serif;
+font-style:	normal;
+font-weight: normal;
+color: #333;
+text-decoration: none;
+list-style: none;
+list-style-type: none;
+outline: none;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box}
+
+html {height:100%; font-size:100%; overflow-y:scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}
+html, body {width: 100%; height: 100%; min-height: 860px}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block}
+audio, canvas, video {display: inline-block; *display: inline; *zoom:1}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+blockquote, q {quotes: none}
+button {cursor: pointer}
+caption, th {text-align: left}
+img {vertical-align: middle;}
+label {cursor: pointer}
+table {border-collapse: collapse; border-spacing: 0}
+::-moz-selection, ::selection {background: #59879F; color: #FFF; text-shadow: none}
+
+/*  MARGIN
+------------------------------------- */
+.M1100 {width: 1100px; margin: 0 auto}
+.M980, #header {width: 980px; margin: 0 auto}
+.M20 {margin-top: 20px}
+.M50 {margin-top: 50px}
+.M100 {margin-top: 100px}
+
+/*  FLOAT
+------------------------------------- */
+.CLR::after {content: ""; display: block; height: 0; clear: both}
+
+/*  LINK (a)
+------------------------------------- */
+.block {display: block}
+
+/*  FULL SCREEN
+------------------------------------- */
+.SCR1 {position: relative; width: 100%; height: 100%; min-height: 860px}
+
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   INPUT
+================================================== */
+
+input, textarea
+{font-size: 13px; font-weight: 300; background: #FFF; border: 1px solid #EEE; border-top: 1px solid #DDD;
+
+-webkit-box-shadow:	0 0 0 3px rgba(255,255,255,0.9);
+ -khtml-box-shadow:	0 0 0 3px rgba(255,255,255,0.9);
+   -moz-box-shadow: 0 0 0 3px rgba(255,255,255,0.9);
+    -ms-box-shadow: 0 0 0 3px rgba(255,255,255,0.9);
+     -o-box-shadow: 0 0 0 3px rgba(255,255,255,0.9);
+     	box-shadow: 0 0 0 3px rgba(255,255,255,0.9);
+
+-webkit-border-radius: 4px;
+ -khtml-border-radius: 4px;
+   -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+        border-radius: 4px}
+
+input[type=email], input[type=password], input[type=text], input[type=date]
+{display: inline-block; width: 100%; height: 36px; padding: 0 10px}
+
+input[type=email]:hover, input[type=password]:hover, input[type=text]:hover,
+input[type=checkbox]:hover, textarea:hover {
+-webkit-box-shadow:	0 0 0 3px rgba(0,0,0,0.08);
+ -khtml-box-shadow:	0 0 0 3px rgba(0,0,0,0.08);
+   -moz-box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+    -ms-box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+     -o-box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+     	box-shadow: 0 0 0 3px rgba(0,0,0,0.08);}
+
+input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, textarea:focus {outline: none;
+-webkit-box-shadow:	0 0 0 3px rgba(0,0,0,0.3);
+ -khtml-box-shadow:	0 0 0 3px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 0 0 3px rgba(0,0,0,0.3);
+    -ms-box-shadow: 0 0 0 3px rgba(0,0,0,0.3);
+     -o-box-shadow: 0 0 0 3px rgba(0,0,0,0.3);
+     	box-shadow: 0 0 0 3px rgba(0,0,0,0.3);}
+
+#SC_cnt .SHr input:focus, .REGISTRER .SHr input:focus, #SC_lpw .SHr input:focus {
+-webkit-box-shadow:	0 0 0 3px rgba(100,150,200,0.5);
+ -khtml-box-shadow:	0 0 0 3px rgba(100,150,200,0.5);
+   -moz-box-shadow: 0 0 0 3px rgba(100,150,200,0.5);
+    -ms-box-shadow: 0 0 0 3px rgba(100,150,200,0.5);
+     -o-box-shadow: 0 0 0 3px rgba(100,150,200,0.5);
+     	box-shadow: 0 0 0 3px rgba(100,150,200,0.5);}
+
+input[type=checkbox] {position: relative; width: 20px; height: 20px; cursor: pointer; float: left;
+
+-webkit-appearance: none;
+   -moz-appearance: none;
+   		appearance: none}
+
+input[type=checkbox]:checked::after {content: url('all/check.png'); position: absolute; top: -1px; left: -3px}

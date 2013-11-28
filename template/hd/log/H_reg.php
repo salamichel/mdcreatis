@@ -1,0 +1,35 @@
+<!-- BODY REGISTRER -->
+
+<body id="bdy_reg">
+
+<!-- HEADER -->
+
+<header id="hdr_rel" class="AN_OP3">
+
+	<!-- MENU -->
+
+	<div id="nav_B2">
+
+		<nav id="nav_all" class="CLR">
+			<?php include ("template/menu.php"); ?>
+		</nav>
+
+	</div>
+
+	<!-- SUB-MENU -->
+
+	<nav id="tit_all" class="SUB_M CLR">
+
+		<h1>Inscription</h1>
+
+		<?php
+		include ("template/ot/NAV_inf.php");
+		?>
+
+	</nav>
+
+</header>
+
+<!-- CONTENT -->
+
+<div id="CT_reg">

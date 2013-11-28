@@ -1,0 +1,768 @@
+/* ==================================================
+   ALL REGISTRER
+================================================== */
+#SC_reg form {padding: 0 150px}
+#SC_reg label {margin-right: 30px; color: #777}
+#SC_reg label input {margin-right: 8px}
+#SC_reg input {margin-bottom: 25px}
+
+#fname, #name {width: 49%; float: left}
+#regCITY, #regCP {width: 192px; float: left}
+#name, #regCP {float: right}
+#regTM + span {display: inline-block; margin-left: 20px}
+#regTM + span a:hover {text-decoration: underline}
+
+
+
+
+#BK_cond {margin-bottom: 10px}
+#BK_cond label span {margin-left: 10px; font-size: 12px; color: rgba(0,0,0,.5);}
+#BK_cond a {font-size: 12px; line-height: 22px; text-decoration: underline; color: rgba(0,0,0,.5);}
+#BK_cond a:hover {color: rgba(0,0,0,.8);}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   ALL CONNECTION
+================================================== */
+#SC_cnt .SHr form {padding: 0 50px}
+#SC_cnt .SHr input {width: 250px; margin: 0 25px; text-align: center}
+#SC_cnt .SHr p {width: 230px; margin: 20px auto; color: #DDD}
+/* ==================================================
+   ALL LOST PASS
+================================================== */
+#SC_lpw .SHr form {padding: 0 150px}
+#SC_lpw .SHr input {width: 350px; margin: 0 25px; text-align: center}
+#SC_lpw .SHr p {width: 190px; margin: 20px auto; color: #DDD}
+/* ==================================================
+   ALL INFO
+================================================== */
+#SC_inf article > div {padding: 50px}
+
+/* ==================================================
+   ACCOUNT
+================================================== */
+#SC_acc_nv .T_BK1 {padding: 50px 120px 0 120px; background: url('acc/IM_0.jpg') no-repeat}
+#SC_acc_nv ul {width: 800px; margin: 0 auto; text-shadow: 0 1px 2px rgba(0,0,0,0.15);}
+#SC_acc_nv ul li {float: left}
+#SC_acc_nv ul a {display: block; margin: 40px 0; padding: 10px 30px; font-size: 18px; opacity: 0.5}
+#SC_acc_nv ul a:hover {opacity: 1}
+
+#SC_acc_cad > div:nth-child(2) {padding: 50px}
+#SC_acc_cad article .F1 {height: 255px}
+#SC_acc_cad article .SH + div {padding: 35px}
+
+/* ==================================================
+   DEVIS
+================================================== */
+
+/*  IMG
+------------------------------------- */
+#SC_pic_dv > div:nth-child(1) {background: url('pic/dev.jpg') no-repeat 100% 0%}
+#SC_des_dv > div:nth-child(1) {background: url('des/dev.jpg') no-repeat 2% 100%}
+#SC_mov_dv > div:nth-child(1) {background: url('mov/dev.jpg') no-repeat 100% 100%}
+#SC_for_dv > div:nth-child(1) {background: url('for/dev.jpg') no-repeat 100% 100%}
+
+/*  GENERAL
+------------------------------------- */
+.SC_dev {width: 980px; margin: 0 auto}
+.SC_dev .SH h3 {font-size: 23px; font-weight: 300}
+.SC_dev .SH h3 span {font-size: 23px; font-weight: 300; color: #CBA}
+.SC_dev form {width: 980px; margin: 0 auto; text-align: center}
+.SC_dev button {width: 300px}
+
+.form_STP {padding: 50px 250px 50px 250px}
+
+.form_STP h3 {
+margin-bottom: 50px;
+padding-bottom: 8px;
+font-size: 16px;
+font-weight: 600;
+border-bottom: solid 1px #EEE}
+
+.form_STP .form div {margin-bottom: 15px}
+.form_STP .form select {border: solid 1px rgba(0,0,0,0.1); height: 30px}
+.form_STP .form textarea {width: 100%; margin: 10px 0; padding: 10px; resize: vertical; float: right}
+.form_STP .form label {display: inline-block; line-height: 30px; float: left}
+.form_STP .form input, .form_STP .form select {float: right}
+
+/*  OTH
+------------------------------------- */
+#first_step input {width: 100px; height: 30px; padding: 0 10px; font-size: 20px}
+
+#second_step input {width: 300px}
+
+#third_step label {width: 90%; text-align: left; float: left}
+#third_step label span {color: #69C; float: right}
+#SC_pic_dv #third_step input {margin: 0 10px; float: left}
+
+#file_design {width: 100%; margin: 0 auto}
+#file_design input {width: 51%; margin: 0 auto; padding: 10px; font-size: 11px; float: none}
+
+
+
+
+
+
+
+
+
+
+
+
+#SC_idx_rg1 {position: relative; top: 200px; width: 980px; margin: 0 auto}
+
+#SC_idx_rg1 article {float: left}
+#SC_idx_rg1 aside {float: right}
+
+#SC_idx_rg1 article {width: 65%; padding: 0 10% 0 0; text-shadow: 0 2px rgba(0,0,0,.15);}
+#SC_idx_rg1 article h1 {margin-bottom: 40px; font-size: 40px; line-height: 50px; color: #FFF}
+#SC_idx_rg1 article p {font-size: 25px; font-weight: 300; color: #FFF}
+
+
+
+#SC_idx_rg1 aside {width: 35%}
+
+
+
+
+
+#BK_forgot {margin-bottom: 10px}
+#BK_forgot label span {margin-left: 10px; font-size: 12px}
+#BK_forgot a {font-size: 12px; line-height: 22px; color: rgba(0,0,0,.4); float: right}
+#BK_forgot a:hover {color: rgba(0,0,0,.8);}
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   IDX
+================================================== */
+#SC_idx, #SC_idx > div {width: 100%; height: 100%}
+#SC_idx .bg-img {position: absolute; top: 0; height: 100%}
+#SC_idx a hgroup {position: relative; width: 1300px; height: 100%; margin: 112px auto 0 auto}
+#SC_idx a img {position: absolute}
+
+/*  NEWS 1
+------------------------------------- */
+#SC_idx {background: url('slide/F8.jpg') 20% 40%;}
+
+/* Connection */
+#SC_idx_rg
+{position: relative; top: 250px; width: 980px; margin: 0 auto; background: rgba(200,200,200,0.9); z-index: 10}
+
+#SC_idx_rg .SHl form {padding: 0 25px 25px 25px}
+#SC_idx_rg .SHl div:nth-child(n+2) {margin-top: 20px}
+#SC_idx_rg .SHl a {font-size: 12px; color: #777}
+#SC_idx_rg .SHl a:hover {text-decoration: underline}
+
+#pass_error {
+position: absolute;
+top: 35px;
+width: 100%;
+padding:  5px 25px;
+font-size: 13px;
+font-weight: 300;
+background: rgba(255,0,0,0.5);
+color: #FFF}
+
+/* Registrer */
+#SC_idx_rg .SHr {background: rgba(255,255,255,0.3); padding: 25px 30px 0 25px}
+#SC_idx_rg .SHr h2 {margin: 0}
+#SC_idx_rg .SHr p {margin: 36px 0 0 0; font-size: 18px; font-weight: 300; line-height: 30px; color: #777}
+#SC_idx_rg .SHr form {margin: 44px 0 26px 0}
+#SC_idx_rg .SHr label {display: block; margin-bottom: 10px; color: #777}
+#SC_idx_rg .SHr input {width: 195px}
+#SC_idx_rg .SHr div {display: inline-block; vertical-align: bottom}
+#SC_idx_rg .SHr div:nth-child(-n+2) {margin: 0 25px 0 0}
+#SC_idx_rg .SHr div:last-child {margin: 0 auto}
+
+/*  NEWS 2
+------------------------------------- */
+#SC_idx .BG2 {background: url('patterns/txt_13.jpg');}
+#SC_idx .BG2 + hgroup {padding-top: 50px; text-align: center}
+#SC_idx .BG2 + hgroup h2 {font-size: 80px}
+#SC_idx .BG2 + hgroup h3 {font-size: 30px; font-weight: 300}
+#SC_idx .BG2 + hgroup div {margin-top: 400px; font-size: 20px; font-weight: 300; color: #FFF;}
+#SC_idx .BG2 + hgroup div:hover {color: #DDD}
+#SC_idx .NW2 img {top: 45%; left: 20%; width: 1000px; height: 250px; background: url('slide/C1.png');}
+
+
+
+
+
+/* ==================================================
+   STORE
+================================================== */
+#DV_STR1 {padding-top: 137px; background: url('patterns/txt_09.jpg');}
+#DV_STR2 {background: url('patterns/txt_10.jpg');}
+#DV_STR3 {background: url('patterns/txt_07.jpg');}
+#DV_STR4 {background: url('patterns/txt_12.jpg');}
+
+.H_str {width: 100%; margin-bottom: 60px; padding: 25px; text-align: center; background: rgba(0,0,0,.65);
+
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+ -khtml-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -ms-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+     -o-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+     	box-shadow: 0 1px 3px rgba(0,0,0,.5);}
+
+.H_str h2 {font-size: 25px; font-weight: 300; color: #FFF}
+
+/* ==================================================
+   STORE (NW)
+================================================== */
+#SC_str_nw {position: relative; width: 100%; height: 505px}
+#SC_str_nw > div {width: 1100px; height: 100%; margin: 0 auto}
+
+#SC_str_nw .SLD1 {width: 100%; height: 100%; margin: 0 auto;
+
+-webkit-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4);
+ -khtml-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4);
+   -moz-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4);
+    -ms-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4);
+     -o-box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4);
+   		box-shadow: 0 2px 10px 2px rgba(0,0,0,0.4);}
+
+/*  NEWS 1
+------------------------------------- */
+#SC_str_nw .BG1 {background: url('idx/news/N1.jpg');}
+
+#SC_str_nw .NW1 hgroup div:nth-child(1) img {
+position: relative;
+width: 316px;
+height: 105px;
+left: 50%;
+margin: 180px 0 0 -158px;
+background: url('idx/news/N1/A1.png') no-repeat}
+
+#SC_str_nw .NW1 hgroup div:nth-child(2) {position: relative; left: 50%; margin: 70px 0 0 -100px}
+
+/*  NEWS 2
+------------------------------------- */
+#SC_str_nw .BG2 {background: url('idx/news/N2.jpg');}
+
+#SC_str_nw .NW-div {position: relative; height: 505px}
+#SC_str_nw .NW-div > div {position: absolute}
+
+#NW2-A1 {width: 350px; height: 505px; background: url('idx/news/N2/A1.png'); z-index: 1}
+#NW2-B1, #NW2-B2, #NW2-B3 {width: 144px; height: 322px; bottom: 30px; z-index: 1}
+#NW2-B1 {right: 40px; background: url('idx/news/N2/B1.png');}
+#NW2-B2 {right: 170px; background: url('idx/news/N2/B2.png');}
+#NW2-B3 {right: 300px; background: url('idx/news/N2/B3.png');}
+
+#SC_str_nw .NW2 h2 {
+position: absolute;
+top: 40px;
+left: 35%;
+font-size: 50px;
+color: #FFF;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+z-index: 0}
+
+#SC_str_nw .NW2 h2 span {display: block; font-size: 50px; color: #FFF}
+
+/*  NEWS 3
+------------------------------------- */
+#SC_str_nw .NW3 h2 {width: 34%; padding-top: 50px; margin-left: 50px; text-shadow: 1px 1px 10px #555}
+
+#SC_str_nw .NW3 span {
+display: inline-block;
+padding: 10px;
+font-size: 60px;
+font-weight: 600;
+line-height: 40px;
+background: rgba(0,0,0,0.8);}
+
+#SC_str_nw .NW3 span:nth-child(1) {color: #9CF}
+#SC_str_nw .NW3 span:nth-child(2) {color: #9CC}
+#SC_str_nw .NW3 span:nth-child(3) {color: #9EE}
+#SC_str_nw .NW3 h2 + div {position: relative; margin: 80px 0 0 50px; z-index: 5}
+
+/*  NEWS 4
+------------------------------------- */
+
+#SC_str_nw .BG4 {background: url('idx/news/N4.jpg');}
+
+#SC_str_nw .NW4 hgroup {padding: 60px 0 0 60px}
+
+#SC_str_nw .NW4 h2, #SC_str_nw .NW4 h3, #SC_str_nw .NW4 p {
+-webkit-transform: rotate(-5deg);
+   -moz-transform: rotate(-5deg);
+   	 -o-transform: rotate(-5deg);
+   	 	transform: rotate(-5deg);}
+
+#SC_str_nw .NW4 h2 span, #SC_str_nw .NW4 h3 span {font-size: 25px; font-weight: 300}
+
+#SC_str_nw .NW4 h2 {width: 44%; padding: 10px; background: rgba(0,0,0,0.1);}
+#SC_str_nw .NW4 h2 span {color: #FFF}
+#SC_str_nw .NW4 h2 span:nth-child(2) {margin: 0 5px; font-weight: 600}
+
+#SC_str_nw .NW4 h3 {width: 37%; margin-left: 115px; padding: 10px; background: rgba(255,255,255,0.3);}
+#SC_str_nw .NW4 h3 span {color: rgba(51,102,102,0.8);} 
+#SC_str_nw .NW4 h3 span:nth-child(1) {margin-right: 5px; font-weight: 600}
+
+#SC_str_nw .NW4 p {width: 56%; margin-top: 50px; text-shadow: 0 1px 2px rgba(0,0,0,0.3);}
+#SC_str_nw .NW4 p span {font-size: 40px; font-weight: 300; line-height: 35px; letter-spacing: 4px; color: #FFF}
+#SC_str_nw .NW4 p span:nth-child(2) {margin-left: 10px; font-weight: 600}
+
+#SC_str_nw .NW4 hgroup div img
+{position: relative; left: 120px; bottom: -50px; width: 228px; background: url('idx/news/N4/A1.png') no-repeat}
+
+/*  NEWS 5
+------------------------------------- */
+#SC_str_nw .BG5 {background: url('idx/news/N5.jpg');}
+
+#SC_str_nw .NW5 h2 {font-size: 50px; line-height: 55px; color: #FFF}
+#SC_str_nw .NW5 p {margin-top: 20px; font-size: 23px; font-weight: 300; line-height: 35px; color: #F93}
+
+#SC_str_nw .NW5 iframe {position: relative; top: 70px; right: 60px; float: right}
+#SC_str_nw .NW5 hgroup {width: 40%; padding-top: 200px; margin-left: 50px}
+
+/* ==================================================
+   STORE (SV)
+================================================== */
+.SC_str_sv {position: relative; width: 100%}
+.SC_str_sv > div {position: relative; width: 1100px; height: 545px; margin: 0 auto}
+.SC_str_sv article {display: block; height: 100%; float: left}
+.SC_str_sv a {display: block; position: relative; float: left}
+
+/*  SV1
+------------------------------------- */
+#SC_str_sv1 a:nth-child(2) {background: url('str/sv/A1.jpg'); margin: 0 10px}
+#SC_str_sv1 a:nth-child(3) {background: url('str/sv/B1.jpg');}
+#SC_str_sv1 a:nth-child(4) {background: url('str/sv/B0.jpg'); margin: 10px 0 0 10px}
+
+/*  SV2
+------------------------------------- */
+#SC_str_sv2 article > div {width: 360px; height: 100%; margin-right: 10px; padding: 100px 50px 0 0; float: left}
+#SC_str_sv2 article > div h2 {font-size: 45px; font-weight: 300; color: #000;}
+#SC_str_sv2 article > div h3 {font-size: 25px; font-weight: 300; color: #777}
+#SC_str_sv2 article > div p {margin-top: 30px; font-size: 18px ; font-weight: 300; line-height: 30px}
+
+#SC_str_sv2 a:nth-child(2) {background: url('str/sv/C0.jpg'); margin-bottom: 10px}
+#SC_str_sv2 a:nth-child(3) {background: url('str/sv/C1.jpg'); margin-right: 10px}
+#SC_str_sv2 a:nth-child(4) {background: url('str/sv/C2.jpg');}
+
+/*  SV3
+------------------------------------- */
+#SC_str_sv3 a:nth-child(1) {background: url('str/sv/D0.jpg');}
+#SC_str_sv3 a:nth-child(2) {background: url('str/sv/E0.jpg'); margin: 0 10px}
+#SC_str_sv3 a:nth-child(3) {background: url('str/sv/E1.jpg'); margin-bottom: 10px}
+#SC_str_sv3 a:nth-child(4) {background: url('str/sv/E2.jpg'); margin: 0 10px 10px 0}
+#SC_str_sv3 a:nth-child(5) {background: url('str/sv/E3.jpg');}
+#SC_str_sv3 a:nth-child(6) {background: url('str/sv/E4.jpg'); margin-right: 10px}
+#SC_str_sv3 a:nth-child(7) {background: url('str/sv/E5.jpg');}
+
+
+
+
+
+/* ==================================================
+   RETOUCH
+================================================== */
+
+/*  RT
+------------------------------------- */
+#SC_ret_rt .T_LS3 a {opacity: 0.4}
+#SC_ret_rt .T_LS3 a img {width: 277px; height: 160px}
+#SC_ret_rt .T_LS3 a:nth-child(1) img {background: url('ret/idx/A1.jpg') no-repeat}
+#SC_ret_rt .T_LS3 a:nth-child(2) img {background: url('ret/idx/A2.jpg') no-repeat}
+#SC_ret_rt .T_LS3 a:nth-child(3) img {background: url('ret/idx/A3.jpg') no-repeat}
+#SC_ret_rt .T_LS3 a div {margin-bottom: 15px; border-bottom: solid 1px #E4E4E4; padding-bottom: 15px}
+#SC_ret_rt .T_LS3 a:hover {opacity: 1}
+
+/*  TK
+------------------------------------- */
+#liteaccordion li img {width: 602px}
+#liteaccordion li:nth-child(1) img {background: url('ret/idx/tk/A.jpg');}
+#liteaccordion li:nth-child(2) img {background: url('ret/idx/tk/B.jpg');}
+#liteaccordion li:nth-child(3) img {background: url('ret/idx/tk/C.jpg');}
+#liteaccordion li:nth-child(4) img {background: url('ret/idx/tk/D.jpg');}
+#liteaccordion li:nth-child(5) img {background: url('ret/idx/tk/E.jpg');}
+#liteaccordion li:nth-child(6) img {background: url('ret/idx/tk/F.jpg');}
+#liteaccordion li:nth-child(7) img {background: url('ret/idx/tk/G.jpg');}
+#liteaccordion li:nth-child(8) img {background: url('ret/idx/tk/P.jpg');}
+
+/* ==================================================
+   RETOUCH - TIME
+================================================== */
+#SC_ret_tm .FM_T1 {background: url('ret/tm/A0.jpg') no-repeat}
+#SC_ret_tm .FM_T1 p {margin-bottom: 0}
+#SC_ret_tm .T_OTH img {width: 99px; height: 132px; margin-bottom: 20px}
+#ret_tm1 {background: url('ret/tm/A1.png');}
+#ret_tm2 {background: url('ret/tm/A2.png');}
+
+/* ==================================================
+   RETOUCH - STEP
+================================================== */
+#SC_ret_sp .FM_T1 {background: url('ret/sp/A0.jpg') no-repeat}
+#SC_ret_sp .FM_T1 p {margin-bottom: 0}
+#SC_ret_sp > div:nth-child(2) {padding: 50px}
+#SC_ret_sp article .F1 {height: 255px}
+#SC_ret_sp .SH + div {padding: 35px}
+#xhr_field {padding: 20px; border: dashed 2px #DDD; background: #F9F9F9}
+
+/*  AC1
+------------------------------------- */
+#holder {border: 5px dashed #DDD; width: 100%; min-height: 500px}
+#holder.hover {border: 5px dashed #999}
+#holder img {margin: 10px;
+
+-webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+ -khtml-box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+   -moz-box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+    -ms-box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+     -o-box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+     	box-shadow: 0 1px 7px rgba(0,0,0,0.6);}
+
+#holder p {margin: 10px; font-size: 14px}
+progress {width: 100%}
+progress:after {content: '%'}
+.fail {background: #C00; padding: 2px; color: #FFF}
+.hidden {display: none !important}
+#bar_progress {width: 50%; margin: 0 auto}
+#uploadprogress {margin-top: 10px}
+
+p.result {margin: 0px; padding: 0px}
+fieldset {width: 100%; margin: 15px 0px 25px 0px; padding: 15px}   
+legend {font-weight: bold}
+.button {text-align: right}
+.button input {font-weight: bold}
+
+#dnd_drag {
+display: none;
+margin: 1em 0;
+padding: 1em 0;
+border: 2px dashed #888;
+border-radius: 7px;
+text-align: center;
+color: #555;
+cursor: default}
+
+#dnd_drag.hover {border: 2px dashed #000}
+#xhr_status, #dnd_status {font-size: 90%; font-style: italic}
+
+/*  AC2
+------------------------------------- */
+#SC_ret_ac2 article {background: url('all/ls/LSb.jpg') bottom no-repeat; padding: 30px}
+#SC_ret_ac2 article:last-child {background: none}
+#SC_ret_ac2 article div:first-child {float: left}
+#SC_ret_ac2 article div:last-child {width: 820px; float: right}
+
+#SC_ret_ac2 div:first-child img {width: 40px; height: 40px}
+#SC_ret_ac2 div:first-child img:first-child {background: url('ret/idx/N2r.jpg') 50% 50%}
+
+#SC_ret_ac2 select {
+
+width: 300px;
+height: 28px;
+margin: 5px 60px 0 0;
+border: solid 1px #CCC;
+text-shadow: 0 1px 2px rgba(0,0,0,0.15);}
+
+#SC_ret_ac2 select + a, #SC_ret_ac2 select + button {width: 90px}
+
+/*  AC3
+------------------------------------- */
+#SC_ret_ac3 .SH h3, #SC_ret_ac4 .SH h3 {padding: 10px 0; font-size: 16px; text-align: center}
+
+/* ==================================================
+   RETOUCH - PCK
+================================================== */
+#SC_ret_nv > div {padding: 15px}
+
+#ret_PK2 {padding: 0 50px 50px 50px}
+#ret_PK2 h1 {font-size: 25px; font-weight: 300; line-height: 20px; margin-bottom: 15px; padding: 50px 0 15px 0; border-bottom: 1px solid #EEE; color: #CBA}
+
+.price2 {display: block; font-size: 30px; text-align: right}
+.price2 sup {font-size: 14px; letter-spacing: 2px; vertical-align: text-top}
+
+/*  IMG
+------------------------------------- */
+.pk-img {height: 160px}
+
+#pk-img1 {background: url('ret/idx/pk/P1.png') 50% no-repeat}
+#pk-img2 {background: url('ret/idx/pk/P2.png') 50% no-repeat}
+#pk-img3 {background: url('ret/idx/pk/P3.png') 50% no-repeat}
+#pk-img4 {background: url('ret/idx/pk/P4.png') 50% no-repeat}
+#pk-img5 {background: url('ret/idx/pk/P5.png') 50% no-repeat}
+#pk-img6 {background: url('ret/idx/pk/P6.png') 50% no-repeat}
+#pk-img7 {background: url('ret/idx/pk/P7.png') 50% no-repeat}
+#pk-img8 {background: url('ret/idx/pk/P8.png') 50% no-repeat}
+#pk-img9 {background: url('ret/idx/pk/P9.png') 50% no-repeat}
+
+
+
+
+
+/* ==================================================
+   PICTURE (NW)
+================================================== */
+#SC_pic_nw {width: 100%; height: 100%}
+#SC_pic_nw > div {width: 100%; height: 100%; margin: 0 auto}
+#SC_pic_nw .bg-img {position: absolute; top: 0; height: 100%}
+#SC_pic_nw a hgroup {position: relative; width: 1300px; height: 100%; margin: 112px auto 0 auto}
+#SC_pic_nw a img {position: absolute}
+
+/*  NEWS 1
+------------------------------------- */
+#SC_pic_nw .BG1 {background: url('slide/D2.jpg');}
+
+#SC_pic_nw .BG1 + hgroup {padding: 150px 0 0 250px}
+#SC_pic_nw .BG1 + hgroup h2 {font-size: 100px; line-height: 70px; letter-spacing: 10px}
+#SC_pic_nw .BG1 + hgroup h2 span {display: block; font-size: 40px; letter-spacing: 17px}
+#SC_pic_nw .BG1 + hgroup h3 {margin-top: 80px; font-size: 40px; font-weight: 300}
+#SC_pic_nw .BG1 + hgroup p {width: 300px; font-size: 20px; font-weight: 300}
+#SC_pic_nw .BG1 + hgroup div {margin-top: 100px; font-size: 18px; font-weight: 300; color: #FFF; letter-spacing: 2px}
+#SC_pic_nw .BG1 + hgroup div:hover {color: #DDD}
+#SC_pic_nw .NW1 img {bottom: 0; left: 45%; width: 686px; height: 650px; background: url('slide/A2.png');}
+
+/*  NEWS 2
+------------------------------------- */
+#SC_pic_nw .BG2 {background: #F3F3F3}
+
+#SC_pic_nw .BG2 + hgroup {padding-top: 50px; text-align: center}
+#SC_pic_nw .BG2 + hgroup h2 {font-size: 80px}
+#SC_pic_nw .BG2 + hgroup h3 {font-size: 30px; font-weight: 300}
+#SC_pic_nw .BG2 + hgroup div {margin-top: 400px; font-size: 20px; font-weight: 300; color: #FFF;}
+#SC_pic_nw .BG2 + hgroup div:hover {color: #DDD}
+#SC_pic_nw .NW2 img {top: 45%; left: 20%; width: 1000px; height: 250px; background: url('slide/C1.png');}
+
+/* ==================================================
+   PICTURE (SV)
+================================================== */
+
+/*  SV1
+------------------------------------- */
+#SC_pic_sv1 {width: 100%; height: 100%}
+
+#SC_pic_sv1 > a {display: block; height: 50%}
+#SC_pic_sv1 > a div {width: 980px; height: 100%; margin: 0 auto}
+
+#SC_pic_sv1 > a:nth-child(1) {background: url('slide/gd2A.png');}
+#SC_pic_sv1 > a:nth-child(2) {background: url('slide/gd5A.png');}
+
+#SC_pic_sv1 > a:nth-child(1) div {background: url('slide/E1.png') no-repeat 100% 50%}
+#SC_pic_sv1 > a:nth-child(2) div {background: url('slide/E2.png') no-repeat 0% 100%}
+#SC_pic_sv1 > a:nth-child(1) div h5 {text-shadow: 0 1px 2px #EEE; color: #333}
+#SC_pic_sv1 > a:nth-child(2) div h5 {text-shadow: 0 1px 2px #333; color: #EEE}
+
+#SC_pic_sv1 > a:hover {
+-webkit-box-shadow: inset 0 0 100px 10px rgba(0,0,0,.7);
+ -khtml-box-shadow: inset 0 0 100px 10px rgba(0,0,0,.7);
+   -moz-box-shadow: inset 0 0 100px 10px rgba(0,0,0,.7);
+    -ms-box-shadow: inset 0 0 100px 10px rgba(0,0,0,.7);
+     -o-box-shadow: inset 0 0 100px 10px rgba(0,0,0,.7);
+     	box-shadow: inset 0 0 100px 10px rgba(0,0,0,.7);}
+
+/*  SV2
+------------------------------------- */
+#SC_pic_sv2 {width: 1100px; height: 100%; margin: 0 auto}
+#SC_pic_sv2 a img {width: 317px; height: 160px}
+
+#SC_pic_sv2 a:nth-child(1) img {background: url('pic/idx/C1.jpg') no-repeat}
+#SC_pic_sv2 a:nth-child(2) img {background: url('pic/idx/C2.jpg') no-repeat}
+#SC_pic_sv2 a:nth-child(3) img {background: url('pic/idx/C3.jpg') no-repeat}
+#SC_pic_sv2 a div {margin-bottom: 15px; border-bottom: solid 1px #E4E4E4; padding-bottom: 15px}
+
+/* ==================================================
+   PICTURE (PIC)
+================================================== */
+#SC_pic1 #slider-wrapper {width: 1100px; height: 400px}
+#SC_pic2, #SC_pic2 nav {margin-top: 50px}
+#SC_pic2 button {width: 300px}
+.tab_pic {padding: 50px 100px}
+.tab_pic p span {font-weight: normal}
+
+/*  IMG
+------------------------------------- */
+.pk-pic {width: 225px; height: 160px}
+
+#pk-picA1 {background: url('pic/pk/PA1.png');}
+#pk-picA2 {background: url('pic/pk/PA2.png');}
+#pk-picA3 {background: url('pic/pk/PA3.png');}
+#pk-picB1 {background: url('pic/pk/PB1.png');}
+#pk-picB2 {background: url('pic/pk/PB2.png');}
+#pk-picB3 {background: url('pic/pk/PB3.png');}
+
+
+
+
+
+/* ==================================================
+   DESIGN
+================================================== */
+
+/*  SV1
+------------------------------------- */
+#SC_des_sv1 .FM_T1r {background: url('des/idx/A0.jpg') 0% 100% no-repeat}
+#SC_des_sv1 .FM_T1r a {width: 300px}
+#SC_des_sv1 .T_LS3 a img {width: 277px; height: 160px}
+#SC_des_sv1 .T_LS3 a:nth-child(1) img {background: url('des/idx/A1.jpg') no-repeat}
+#SC_des_sv1 .T_LS3 a:nth-child(2) img {background: url('des/idx/A2.jpg') no-repeat}
+#SC_des_sv1 .T_LS3 a:nth-child(3) img {background: url('des/idx/A3.jpg') no-repeat}
+#SC_des_sv1 .T_LS3 a div {margin-bottom: 15px; border-bottom: solid 1px #E4E4E4; padding-bottom: 15px}
+
+/*  SV2
+------------------------------------- */
+#SC_des_sv2 {padding-top: 10px}
+
+#BK_des_if1 {width: 653px; border-right: solid 1px #E4E4E4; float: left}
+
+#BK_des_if1 a
+{display: block; height: 467px; padding: 50px; background: url('des/idx/B1.jpg') no-repeat 50% 100%}
+
+#BK_des_if1 a:hover p span {color: #69C}
+
+#BK_des_if2 {width: 327px; float: left}
+#BK_des_if2 a {display: block; padding: 25px}
+#BK_des_if2 a img {width: 277px; height: 95px}
+#BK_des_if2 a:nth-child(1) {border-bottom: solid 1px #E4E4E4}
+#BK_des_if2 a:nth-child(1) img {background: url('des/idx/B2.jpg') no-repeat}
+#BK_des_if2 a:nth-child(2) img {background: url('des/idx/B3.jpg') no-repeat}
+
+#BK_des_if1 a:hover, #BK_des_if2 a:hover {
+-webkit-box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.2);
+ -khtml-box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.2);
+   -moz-box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.2);
+    -ms-box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.2);
+     -o-box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.2);
+   		box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.2);}
+
+/*  SV3
+------------------------------------- */
+#SC_des_sv3 a {display: block; background: url('des/idx/C1.jpg') 0% 100% no-repeat}
+
+/* ==================================================
+   DESIGN (DES)
+================================================== */
+
+/*  DES1
+------------------------------------- */
+#SC_des1A .T_BK1l {background: url('des/des_sv1/A1.jpg') 100% 20% no-repeat}
+#SC_des1B a {display: block; background: url('des/des_sv1/A2.jpg') 0% 10% no-repeat}
+#SC_des1C .T_BK1r {background: url('des/des_sv1/A3.jpg') 0% 100% no-repeat}
+
+/*  DES2
+------------------------------------- */
+#SC_des2A .T_BK1r {background: url('des/des_sv2/B1.jpg') 5% 0% no-repeat}
+
+#SC_des2A .LSt {display: block}
+#SC_des2A .LSt:hover p:last-child {color: #39E}
+#SC_des2A a:nth-child(1) > div {background: url('des/des_sv2/B2.png') 92% 100% no-repeat}
+#SC_des2A a:nth-child(2) > div {background: url('des/des_sv2/B3.png') -10% 0% no-repeat}
+
+#SC_des2A a:hover > div {
+-webkit-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+ -khtml-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+   -moz-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+    -ms-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+     -o-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+   		box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);}
+
+
+
+
+
+/* ==================================================
+   MOVIE
+================================================== */
+
+/*  SV
+------------------------------------- */
+#SC_mov_sv {background: url('mov/idx/A0.jpg') 100% 50% no-repeat}
+#SC_mov_sv > div {padding: 50px 250px}
+#SC_mov_sv ul {width: 540px; margin: 0 auto}
+#SC_mov_sv li {float: left}
+#SC_mov_sv li:nth-child(2) {margin-left: 40px}
+#SC_mov_sv a {width: 250px}
+
+/*  VD
+------------------------------------- */
+#SC_mov_vd {width: 980px; margin: 0 auto; padding-bottom: 50px}
+#SC_mov_vd .SH {width: 350px; float: left}
+
+#videoThumb {margin-bottom: 50px}
+#videoThumb article {padding: 0 70px}
+#videoThumb div {margin: 40px 0 0 0; cursor: pointer}
+
+#videoThumb article:nth-child(1) div:nth-child(1) img {background: url('mov/vd/img1.jpg');}
+#videoThumb article:nth-child(1) div:nth-child(2) img {background: url('mov/vd/img2.jpg');}
+#videoThumb article:nth-child(2) div:nth-child(1) img {background: url('mov/vd/img3.jpg');}
+#videoThumb article:nth-child(2) div:nth-child(2) img {background: url('mov/vd/img4.jpg');}
+
+/* ==================================================
+   MOVIE (MOV)
+================================================== */
+#SC_mov1A, #SC_mov2A {width: 980px; margin: 0 auto}
+#SC_mov1B button, #SC_mov2B button {width: 300px}
+#SC_mov1B .tab_pic, #SC_mov2B .tab_pic {padding: 45px}
+
+#SC_mov1A .FM_T1r {background: url('mov/mov_A/A1.jpg') no-repeat 10% 100%}
+#SC_mov2A .FM_T1l {background: url('mov/mov_B/B1.jpg') no-repeat 95% 100%}
+
+
+
+
+
+/* ==================================================
+   FORMATION
+================================================== */
+#SC_for_if {width: 980px; margin: 0 auto; background: url('for/idx/A0.jpg') 5% 0% no-repeat}
+
+/*  SV
+------------------------------------- */
+#SC_for_sv a {display: block}
+#SC_for_sv a:hover P:last-child {color: #39E}
+#SC_for_sv a:nth-child(1) > div {background: url('for/idx/A1.png') 90% 0% no-repeat}
+#SC_for_sv a:nth-child(2) > div {background: url('for/idx/A2.png') 10% 100% no-repeat}
+#SC_for_sv a:nth-child(3) > div {background: url('for/idx/A3.png') 90% 100% no-repeat}
+#SC_for_sv article h2:before {content: url('for/idx/ico.png') 20px 20px; margin-right: 10px}
+
+#SC_for_sv a:hover {
+-webkit-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+ -khtml-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+   -moz-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+    -ms-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+     -o-box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);
+   		box-shadow: inset 0 0 20px 3px rgba(0,0,0,0.2);}
+   		
+/* ==================================================
+   FORMATION (FOR)
+================================================== */
+#SC_for1A {background: url('for/for_A/A1.jpg') no-repeat 0% 100%}
+#SC_for1B {padding: 100px 0 50px 0}
+#SC_for1B button {width: 300px}
+
+/*  WEB
+------------------------------------- */
+#SC_for2A .FM_T1 {padding: 50px 200px 0 200px}
+#SC_for2A img {background: url('for/for_B/B1.jpg'); width: 980px; height: 200px}
+
+#SC_for2B {width: 1100px; margin: 100px auto 0 auto}
+#SC_for2B article:nth-child(1) {width: 480px; float: left}
+#SC_for2B article:nth-child(2) {width: 480px; float: right}
+#SC_for2B ul {margin: 20px}
+#SC_for2B li a {display: block; padding: 10px; font-weight: 300; border-top: solid 1px #EEE; color: #AAA}
+#SC_for2B li a:hover:before {content: url('all/ico/row_1.png'); margin-right: 10px; opacity: 0.5}
+#SC_for2B li a:hover {color: #333}
+#SC_for2B li:first-child a {border-top: 0}
+#SC_for2B li a span {font-size: 13px; opacity: 0.2; float: right}
+#SC_for2B li a:hover span {opacity: 1}
+#SC_for2B button {font-size: 16px; font-weight: 300; background: transparent; opacity: 0.5}
