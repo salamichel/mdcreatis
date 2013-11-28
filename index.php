@@ -12,7 +12,6 @@ require_once('classes/class.upload.php');
 require_once('libs/Smarty.class.php');
 require_once("scripts/functions.php");
 
-include ("template/head.php");
 
 $cart = new Panier();
 $items = $cart->showCart();
@@ -25,6 +24,19 @@ $db = new Mysqlidb($bdd_host, $bdd_user, $bdd_pwd, $bdd_name);
 
 $formCorrect = TRUE;
 $msg = "";
+
+if (isset($_COOKIE['user']) && isset($_COOKIE['adresse'])) {
+    $user = $db->where('email', $_COOKIE['user'])
+            ->get('md_comptes');
+
+    $adresse = $db
+            ->where('compte_id', $user[0]["compte_id"])
+            ->where('is_actif', 1)
+            ->get('md_adresses');
+
+    $_SESSION["adresse"] = $adresse;
+    $_SESSION["user"] = $user[0];
+}
 
 if (isset($_POST) && !empty($_POST)) {
     if (!empty($_POST["src"]) && $_POST["src"] == "connection") {
@@ -43,6 +55,10 @@ if (isset($_POST) && !empty($_POST)) {
             $_SESSION["adresse"] = $adresse;
 
             //echo "OK";
+
+            if ($_POST["remember_me"] == 1) {
+                setcookie("user", $_POST["cnx_id"], 0, "/");
+            }
         } else {
             $formCorrect = FALSE;
             $msg = "Mauvais mot de passe";
@@ -70,6 +86,10 @@ if (isset($_POST) && !empty($_POST)) {
         $mail->Send();
     }
 }
+
+
+include ("template/head.php");
+
 
 if (isset($_GET) && !empty($_GET['page'])) {
     switch ($_GET['page']) {
@@ -351,6 +371,7 @@ if (isset($_GET) && !empty($_GET['page'])) {
             break;
         case "logout":
             unset($_SESSION);
+            unset($_COOKIE["user"]);
             session_destroy();
         default:
             include ("template/hd/nav/H1_idx.php");

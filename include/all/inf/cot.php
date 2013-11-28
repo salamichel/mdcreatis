@@ -1,5 +1,4 @@
 <?php
-
 include ("template/hd/inf/H_cot.php");
 ?>
 
@@ -23,7 +22,7 @@ include ("template/hd/inf/H_cot.php");
                 <h3>Ecrivez-nous directement à partir du site MDcreatis.com</h3>
                 <form action="index.php?send" method="post">
                     <input type="hidden" name="src" value="contact">
-                    
+
                     <div>
                         <label>
                             <strong>Type de demande :</strong>
@@ -37,7 +36,7 @@ include ("template/hd/inf/H_cot.php");
                     </div>
                     <div>
                         <label>
-                            <input name="email" placeholder="Votre email…" required="true" />
+                            <input name="email" placeholder="Votre email…" required="true" value="<?= @$_SESSION["user"]["email"] ?>" />
                         </label>
                     </div>
                     <div>
@@ -101,6 +100,5 @@ include ("template/hd/inf/H_cot.php");
 </section>
 
 <?php
-
 include ("template/ft/F1_wht.php");
 ?>

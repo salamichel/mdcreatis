@@ -165,7 +165,7 @@
                                                                                     <tr valign="BASELINE">
                                                                                         <td align="LEFT" style="padding:5px">{$produit.nom}</td>
                                                                                         <td align="CENTER" style="padding:5px">{$produit.qte}</td>
-                                                                                        <td align="RIGHT" bgcolor="#F9F9F9" style="padding:5px">{$produit.prix}<span> €</span></td>
+                                                                                        <td align="RIGHT" bgcolor="#F9F9F9" style="padding:5px">{$produit.prix|number_format:2}<span> €</span></td>
                                                                                         {$prixttc= $prixttc + $produit.prix}
                                                                                     </tr>
 
@@ -177,7 +177,7 @@
                                                                                             <tr valign="BASELINE">
                                                                                                 <td align="LEFT" style="padding:5px">{$opts.o_nom}</td>
                                                                                                 <td align="CENTER" style="padding:5px">{$opts.o_qte}</td>
-                                                                                                <td align="RIGHT" style="padding:5px">{$opts.o_prix}<span> €</span></td>
+                                                                                                <td align="RIGHT" style="padding:5px">{$opts.o_prix|number_format:2}<span> €</span></td>
                                                                                             </tr>
                                                                                             {$prixttc= $prixttc + $opts.o_prix}
                                                                                         {/foreach}
@@ -189,7 +189,7 @@
                                                                                 <tr valign="BASELINE">
                                                                                     <td></td>
                                                                                     <td align="RIGHT" style="padding:5px; font-weight:600">TOTAL TTC</td>
-                                                                                    <td align="RIGHT" bgcolor="#F3F3F3" style="padding:5px; font-weight:600">{$prixttc}<span> €</span></td>
+                                                                                    <td align="RIGHT" bgcolor="#F3F3F3" style="padding:5px; font-weight:600">{$prixttc|number_format:2}<span> €</span></td>
                                                                                 </tr>
 
                                                                             </tbody>

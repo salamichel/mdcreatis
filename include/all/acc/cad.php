@@ -9,8 +9,8 @@ $cart = new Panier();
 if (isset($_POST) && !empty($_POST["opt"])) {
     foreach ($_POST["opt"] as $k => $opts) {
         foreach ($opts as $option_id) {
-            
-            echo $option_id."<br>";
+
+            //echo $option_id . "<br>";
             $pid = getItemIdByOption($option_id);
 
             $cart->addItem($pid, 1, 0, getItemTitre($pid));
@@ -26,7 +26,6 @@ if (isset($_POST) && !empty($_POST["opt"])) {
                     "filename" => $_SESSION["pics"][$k]["filename"],
                     "filesize" => $_SESSION["pics"][$k]["filesize"]);
                 $cart->addItemFiles($pid, $fileInfo);
-                
             }
         }
     }
@@ -178,72 +177,82 @@ $items = $cart->showCart();
 
     <?
     if (!empty($items)) {
-    ?>
+        ?>
 
         <div class="FM_CAD LSt">
 
             <?
+            $total_caddie = 0;
             foreach ($items as $i => $item) {
                 $option = array();
                 $pid = $item["id"];
                 $produits = $db->where("produit_id", $pid)
                         ->get("md_produits");
+
+                if (!empty($item["options"])) {
+                    $opt_tot = 0;
+                    foreach ($item["options"] as $option) {
+                        $opt_tot += $option["o_prix"];
+                    }
+                }
+
+                $total_caddie += round($item["prix"] + $opt_tot, 2)
                 ?>
                 <aside>
-
-	               	<div class="CLR">
-
-	               		<h1><?= $produits[0]["nom"] ?><span> - <?= $produits[0]["prestation"] ?></span></h1>
-	               		<ul class="CLR">
-	               			<li>Quantité : <?= $item["qte"] ?></li>
-	               			<li><?= round($item["prix"] + $opt_tot, 2) ?> €</li>
-	               		</ul>
-
-	               	</div>
-
-	               	<div>
-
-		               	<ul class="CLR">
-	               			<li>
-		               			<?
-                        if (!empty($item["options"])) {
-                            $opt_tot = 0;
-                            foreach ($item["options"] as $option) {
-                                $opt_tot += $option["o_prix"];
-
-                                $opt = $db->where("option_id", $option["o_id"])
-                                        ->get("md_options");
-                                ?>
-                                <?= $option["o_nom"] ?> 
+                    <div class="CLR">
+                        <h1><?= $produits[0]["nom"] ?><span> - <?= $produits[0]["prestation"] ?></span></h1>
+                        <ul class="CLR">
+                            <li>Quantité : <?= $item["qte"] ?></li>
+                            <li><?= number_format(round($item["prix"] + $opt_tot, 2), 2) ?> €</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="CLR">
+                            <li>
                                 <?
-                            }
-                        } else {
-                            echo 'Aucune Options';
-                        }
-                        ?>
-	               			</li>
-	               			<li>
-		               			<form action="index.php?page=cad" method="post">
-			               			<input type="hidden" name="i" value="<?= $item["id"] ?>">
-			               			<input type="hidden" name="action" value="del">
-			               			<input type="submit" value="Supprimer">
-			               		</form>
-	               			</li>
-	               		</ul>
+                                if (!empty($item["options"])) {
+                                    $opt_tot = 0;
+                                    foreach ($item["options"] as $option) {
+                                        $opt_tot += $option["o_prix"];
 
-	               	</div>
+                                        $opt = $db->where("option_id", $option["o_id"])
+                                                ->get("md_options");
+                                        ?>
+                                        <?= $option["o_nom"] ?> 
+                                        <?
+                                    }
+                                } else {
+                                    echo 'Aucune Options';
+                                }
+                                ?>
+                            </li>
+                            <li>
+                                <form action="index.php?page=cad" method="post">
+                                    <input type="hidden" name="i" value="<?= $item["id"] ?>">
+                                    <input type="hidden" name="action" value="del">
+                                    <input type="submit" value="Supprimer">
+                                </form>
+                            </li>
+                        </ul>
+
+                    </div>
+
 
                 </aside>
 
                 <?
             }
             ?>
+            <div>
+                Total : <?= number_format($total_caddie, 2) ?> €
+
+            </div>
         </div>
         <?
     } else {
         ?>
         <div class="T_BK1 LSt">
-        	<p>Votre panier ne contient aucun article</p>
+            <p>Votre panier ne contient aucun article</p>
         </div>
         <?
     }
@@ -255,43 +264,43 @@ $items = $cart->showCart();
 
 <section class="FM_AC1 M20 CLR">
 
-	<article class="F1 R4">
+    <article class="F1 R4">
 
-		<h1>Etape 1</h1>
-		<h2>Envoi commande</h2>
-		<p>Vérifiez puis confirmez votre commande en appuyant sur "Envoyer ma Commande".</p>
+        <h1>Etape 1</h1>
+        <h2>Envoi commande</h2>
+        <p>Vérifiez puis confirmez votre commande en appuyant sur "Envoyer ma Commande".</p>
 
-	</article>
+    </article>
 
-	<article class="F1 R4">
+    <article class="F1 R4">
 
-		<h1>Etape 2</h1>
-		<h2>Paiement</h2>
-		<p>Le paiement de votre commande s'effectue directement avec nous par mail.</p>
+        <h1>Etape 2</h1>
+        <h2>Paiement</h2>
+        <p>Le paiement de votre commande s'effectue directement avec nous par mail.</p>
 
-	</article>
+    </article>
 
-	<article class="F1 R4">
+    <article class="F1 R4">
 
-		<h1>Etape Finale</h1>
-		<h2>Validation</h2>
-		<?
-          if (empty($_SESSION["user"]["is_actif"])) {
-              ?>
-          <form action = "#" method = "post">
-              <a href="index.php?page=registrer" class = "B1 B_BL1 R4">Créer un compte</a>
-          </form>
-              <?
-          } else {
-              ?>
-              <form action = "#" method = "post">
-                  <a href = "index.php?page=order_validate" class = "B1 B_BL1 R4">Envoyer ma Commande</a>
-              </form>
-              <?
-          }
-          ?>
+        <h1>Etape Finale</h1>
+        <h2>Validation</h2>
+        <?
+        if (empty($_SESSION["user"]["is_actif"])) {
+            ?>
+            <form action = "#" method = "post">
+                <a href="index.php?page=registrer" class = "B1 B_BL1 R4">Créer un compte</a>
+            </form>
+            <?
+        } else {
+            ?>
+            <form action = "#" method = "post">
+                <a href = "index.php?page=order_validate" class = "B1 B_BL1 R4">Envoyer ma Commande</a>
+            </form>
+            <?
+        }
+        ?>
 
-	</article>
+    </article>
 
 </section>
 
